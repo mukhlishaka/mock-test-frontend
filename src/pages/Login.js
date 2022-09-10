@@ -5,15 +5,17 @@ const login = () => {
     return (
         <>
             <div className="user-input">
-                <h1>Login</h1>
-                <form action="" method="post">
                     <div className="container">
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
-                        <button type="submit" className="btn">Login</button>
+                        <form>
+                            <h1 className="title">Login</h1>
+                            <div className="input">
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                                <button type="submit"><a href="/dashboard">Login</a></button>
+                            </div>
+                            <h4 className="ask">Don't have an account? <a href="/register">Register</a></h4>
+                        </form>
                     </div>
-                </form>
-                <h4>Don't have an account? <a href="/register">Register</a></h4>
             </div>
         </>
     )

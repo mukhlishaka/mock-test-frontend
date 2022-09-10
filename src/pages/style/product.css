@@ -36,7 +36,7 @@ button a {
 }
 
 .container {
-    height: 100vh;
+    margin-top: 50px;
     border: none;
 }
 
@@ -59,9 +59,11 @@ button a {
 
 .col h4 {
     margin: 2px;
+    text-align: left;
 }
 .col p {
     margin: 2px;
+    text-align: left;
 }
 
 .image-1 {
