@@ -5,6 +5,7 @@ import "./style/modal.css"
 import "./style/product.css"
 import React, { useState } from "react";
 
+
 const Dashboard = () => {
     const [create, setCreate] = useState(false);
     const [update, setUpdate] = useState(false);
@@ -94,48 +95,6 @@ const Dashboard = () => {
                         <h4>Celana Tahun Baru</h4>
                         <p>Rp. 120.000</p>
                     </div>
-                    <div class="col" onclick="buy('baju anak', 130000)">
-                        <div className="btn-icon">
-                            <a onClick={toggleUpdate} href="">
-                                <img className="edit-icon" src={edit} alt="edit" />
-                            </a>
-                            <br />
-                            <a onClick={toggleDelete} href="">
-                                <img src={trash} alt="trash" />
-                            </a>
-                        </div>
-                        <img src={image1} className="image-1" alt="image1" />
-                        <h4>Baju Anak</h4>
-                        <p>Rp. 130.000</p>
-                    </div>
-                    <div class="col" onclick="buy('baju bapak', 140000)">
-                        <div className="btn-icon">
-                            <a onClick={toggleUpdate} href="">
-                                <img className="edit-icon" src={edit} alt="edit" />
-                            </a>
-                            <br />
-                            <a onClick={toggleDelete} href="">
-                                <img src={trash} alt="trash" />
-                            </a>
-                        </div>
-                        <img src={image1} className="image-1" alt="image1" />
-                        <h4>Baju Bapak</h4>
-                        <p>Rp. 140.000</p>
-                    </div>
-                    <div class="col" onclick="buy('baju ibu', 150000)">
-                        <div className="btn-icon">
-                            <a onClick={toggleUpdate} href="">
-                                <img className="edit-icon" src={edit} alt="edit" />
-                            </a>
-                            <br />
-                            <a onClick={toggleDelete} href="">
-                                <img src={trash} alt="trash" />
-                            </a>
-                        </div>
-                        <img src={image1} className="image-1" alt="image1" />
-                        <h4>Baju Ibu</h4>
-                        <p>Rp. 150.000</p>
-                    </div>
                 </div>
             </div>
             {create && (
@@ -144,9 +103,9 @@ const Dashboard = () => {
                     <div className="modal-content">
                         <h3>Create New</h3>
                         <div className="border">
-                            <input type="product" placeholder="Product Name" />
-                            <input type="Price" placeholder="Price (Dollar USD)" />
-                            <input type="url" placeholder="Image Url" />
+                            <input type="text" placeholder="Product Name" />
+                            <input type="text" placeholder="Price (Dollar USD)" />
+                            <input type="text" placeholder="Image Url" />
                         </div>
                         <button className="btn-edit">Create</button>
                         <button className="close-modal" onClick={toggleCreate}>
