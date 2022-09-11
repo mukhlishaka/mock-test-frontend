@@ -23,3 +23,8 @@ Create a new repository untuk yang belum memiliki project atau belum membuat fol
     $ git push -u origin master
 
 6. Check di website github, apakah file kita sudah terupload.
+
+7. Install node module dahulu sebelum menjalankan project
+
+8. Lalu Jalankan Project
+    $ npm start
